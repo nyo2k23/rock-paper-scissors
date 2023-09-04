@@ -38,7 +38,7 @@ public class Game {
                 }   else {
                 playerTwoPick = setPick();
             }
-            System.out.println("Computer picked: " + playerTwoPick);
+            System.out.println(playerTwo.getName() + " picked " + playerTwoPick);
             if(pick.equals(playerTwoPick)) {
                 playerOnePoints++;
                 playerTwoPoints++;
@@ -48,14 +48,14 @@ public class Game {
                 } else {
                     playerTwoPoints++;
                 }
-            } else if (pick.equals("paper")) {
+            } else if (pick.equals("scissors")) {
                 if(playerTwoPick.equals("rock")) {
                     playerOnePoints++;
                 }   else {
                     playerTwoPoints++;
                 }
             }
-            System.out.println("Results:\n"+ playerOne.getName() + " - " + playerOnePoints);
+            System.out.println("Scores:\n"+ playerOne.getName() + " - " + playerOnePoints);
             System.out.println(playerTwo.getName() + " - " + playerTwoPoints);
         }
         displayWinner(playerOnePoints, playerTwoPoints);
