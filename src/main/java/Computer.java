@@ -3,7 +3,7 @@ public class Computer extends Player{
     private UserType userType = UserType.COMPUTER;
     private static int numberOfRobotUserInstances=0;
     public Computer() {
-        this.name = userType.toString() + "-" + numberOfRobotUserInstances;
+        this.name = userType.toString() + "_" + numberOfRobotUserInstances;
         numberOfRobotUserInstances++;  // incremment robot user instances so the next user is COMPUTER-n
     }
     @Override
